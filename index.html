@@ -10,20 +10,23 @@
     <h1 class="header">My Settings</h1>
     <div class="row">
         <div class="col-md-12">
-            <ul class="tab">
-                <li>Profile</li>
-                <li>Notifications</li>
-                <li>Social</li>
-                <li>Billing</li>
+            <ul class="tabs">
+                <li class="active"><a href="#">Profile</a></li>
+                <li><a href="#">Notifications</a></li>
+                <li><a href="#">Social</a></li>
+                <li><a href="#">Billing</a></li>
             </ul>
 
-            <div class="row">
+            <div class="col-md-12">
                 <div class="col-md-4">
                     <h2 class="subtitle">Photo</h2>
                     <img src="http://placehold.it/200x200"/>
-                    <select>
-                        <option value="">Add photo from...</option>
-                    </select>
+                    <div class="input-group">
+                        <select class="dropdown-stroke">
+                            <option value="">Add photo from...</option>
+                        </select>
+                    </div>
+
                     <a>Delete or Remove photo</a>
 
                 </div>
@@ -31,26 +34,35 @@
                     <div>
                         <h2 class="subtitle">Profile</h2>
                         <div class="input-group">
-                            <label>Name</label> <input type="text" name="firstname"/>
+                            <label>Name</label> <input type="text" name="firstname"/><span class="information information-fill">?</span>
                         </div>
 
                         <div class="input-group">
-                            <label>Email Address</label> <input type="email" name="emailaddress"/>
+                            <label>Email Address</label> <input type="email" name="emailaddress"/><span class="information information-fill">?</span>
+                        </div>
+
+                        <div class="input-group radio">
+                            I'd like to receive email updates  <input type="radio" name="emailupdates"/> <label>Yes</label> <input type="radio" name="emailupdates"/><label>No</label>
                         </div>
 
                         <div class="input-group">
-                            I'd like to receive email updates <label>Yes</label> <input type="radio"/> <label>No</label> <input type="radio"/><br>
-                        </div>
-                        
-                        <div class="input-group">
-                            <label>Password</label> <button class="btn-stroke btn-sm" role="button">Change my password</button>
+                            <label>Password</label> <button class="btn-stroke btn-sm" role="button">Change my password</button> <span class="information information-fill">?</span>
                         </div>
 
                     </div>
                     <div>
-                        Facebook <input type="text" name="facebook"/><br>
-                        Twitter <input type="text" name="twitter"/><br>
-                        Google <input type="text" name="google"/><br>
+                        <div class="input-group">
+                            <label>Facebook</label><input type="text" name="facebook"/><span class="information information-fill">?</span>
+                        </div>
+
+                        <div class="input-group">
+                            <label>Twitter</label> <input type="text" name="twitter"/><span class="information information-fill">?</span>
+                        </div>
+
+                        <div class="input-group">
+                            <label>Google</label> <input type="text" name="google"/><span class="information information-fill">?</span>
+                        </div>
+
                     </div>
                 </div>
             </div>

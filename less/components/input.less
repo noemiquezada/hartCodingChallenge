@@ -2,9 +2,22 @@
   margin-bottom: 15px;
 }
 
+.radio {
+  label {
+    color: #6F7276;
+  }
+}
+
+label {
+  padding-right:5px;
+}
+
 input {
-  height: 46px;
-  min-width: 235px;
+  &:not([type="radio"]) {
+    height: 46px;
+    min-width: 235px;
+  }
+
   border-radius: 4px;
   border: 1px solid #E0E0E0;
   display: inline-block;
@@ -19,4 +32,27 @@ input {
   &:disabled {
     background-color: #F2F2F2;
   }
+
+  &[type="radio"] {
+    margin: 0 5px;
+
+  }
 }
+
+//span {
+//  height: 38px;
+//  width: 38px;
+//  display: inline-block;
+//
+//  &.facebook {
+//    background-image: url("../../images/Facebook.png");
+//  }
+//
+//  &.twitter {
+//    background-image: url("../../images/Twitter.png");
+//  }
+//
+//  &.google {
+//    background-image: url("../../images/Google.png");
+//  }
+//}
