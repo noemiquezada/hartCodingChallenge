@@ -9,21 +9,51 @@
 <div class="container">
     <h1 class="header">My Settings</h1>
     <div class="row">
-        <ul class="tab">
-            <li>Profile</li>
-            <li>Notifications</li>
-            <li>Social</li>
-            <li>Billing</li>
-        </ul>
+        <div class="col-md-12">
+            <ul class="tab">
+                <li>Profile</li>
+                <li>Notifications</li>
+                <li>Social</li>
+                <li>Billing</li>
+            </ul>
 
-        <div class="row">
-            <div class="col-md-4">
-                <h2 class="subtitle">Photo</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="subtitle">Photo</h2>
+                    <img src="http://placehold.it/200x200"/>
+                    <select>
+                        <option value="">Add photo from...</option>
+                    </select>
+                    <a>Delete or Remove photo</a>
+
+                </div>
+                <div class="col-md-8">
+                    <div>
+                        <h2 class="subtitle">Profile</h2>
+                        Name <input type="text" name="firstname"/><br>
+                        Email Address <input type="email" name="emailaddress"/><br>
+                        I'd like to receive email updates Yes <input type="radio"/> No <input type="radio"/><br>
+                        Password <button class="btn-stroke btn-sm" role="button">Change my password</button>
+                    </div>
+                    <div>
+                        Facebook <input type="text" name="facebook"/><br>
+                        Twitter <input type="text" name="twitter"/><br>
+                        Google <input type="text" name="google"/><br>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-8">
-                <h2 class="subtitle">Profile</h2>
+            <div class="row">
+                <div class="col-md-offset-4 col-md-8">
+                    <button class="btn-sm btn-stroke" role="button">Cancel</button>
+                    <button class=" btn-sm btn-fill" role="button">Save</button>
+                </div>
+
             </div>
+
         </div>
+
+
+
     </div>
 
 </div>
